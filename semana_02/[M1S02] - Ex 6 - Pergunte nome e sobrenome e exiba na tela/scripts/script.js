@@ -7,23 +7,16 @@
 // https://developer.mozilla.org/pt-BR/docs/Web/API/Window/alert
 // https://developer.mozilla.org/pt-BR/docs/Web/API/window/prompt
 
-
-//window.alert("Hello world!");
-
-
-// if (window.confirm("Mas você tem certeza disso?")) {
-//     window.alert("Confirmado!");
-// }
+var sobrenome = prompt("Qual é o seu SOBRENOME?");
+var nome = prompt("Qual é o seu primeiro nome?");
+alert("O seu nome completo é: " + nome + " " + sobrenome)
 
 
+// [M1S02] - Ex 5
 // var nome = prompt("Qual é o seu nome?");
-// window.alert("O seu nome é: " + nome);
-
-
-// var nome = prompt("Qual é o seu nome?");
-
+//
 // var idade = prompt("Qual é a sua idade?");
-
+//
 // var esporte = confirm("Gosta de praticar algum esporte?");
 // if (esporte == true) {
 //     esporte = 'você GOSTA de praticar esporte.'
@@ -32,10 +25,20 @@
 // {
 //     esporte = 'você NÃO gosta de praticar esporte.'
 // }
-
+//
 // window.alert("O seu nome é: " + nome + ", a sua idade é: " + idade + " e " + esporte)
 
 
-var sobrenome = prompt("Qual é o seu SOBRENOME?");
-var nome = prompt("Qual é o seu primeiro nome?");
-alert("O seu nome completo é: " + nome + " " + sobrenome)
+// [M1S02] - Ex 4
+// var nome = prompt("Qual é o seu nome?");
+// window.alert("O seu nome é: " + nome);
+
+
+// [M1S02] - Ex 3
+// if (window.confirm("Mas você tem certeza disso?")) {
+//     window.alert("Confirmado!");
+// }
+
+
+// [M1S02] - Ex 2
+//window.alert("Hello world!");

@@ -13,19 +13,6 @@
 // https://developer.mozilla.org/pt-BR/docs/Web/API/window/prompt
 // https://developer.mozilla.org/pt-BR/docs/Web/API/window/confirm
 
-
-//window.alert("Hello world!");
-
-
-// if (window.confirm("Mas você tem certeza disso?")) {
-//     window.alert("Confirmado!");
-// }
-
-
-// var nome = prompt("Qual é o seu nome?");
-// window.alert("O seu nome é: " + nome);
-
-
 let nome = prompt("Qual é o seu nome?");
 
 let idade = prompt("Qual é a sua idade?");
@@ -43,3 +30,18 @@ else
 }
 
 console.log("O seu nome é: " + nome + ", a sua idade é: " + idade + " e " + esporte)
+
+
+// [M1S02] - Ex 4
+// var nome = prompt("Qual é o seu nome?");
+// window.alert("O seu nome é: " + nome);
+
+
+// [M1S02] - Ex 3
+// if (window.confirm("Mas você tem certeza disso?")) {
+//     window.alert("Confirmado!");
+// }
+
+
+// [M1S02] - Ex 2
+//window.alert("Hello world!");
