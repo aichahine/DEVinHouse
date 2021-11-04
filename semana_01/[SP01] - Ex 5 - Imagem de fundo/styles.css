@@ -1,0 +1,29 @@
+/* [SP01] - Ex 5 - Imagem de fundo
+Adicione uma imagem de fundo no seu h1 que cubra todo o espaço do elemento, sem
+repetições.
+Dica: https://www.w3schools.com/cssref/pr_background-image.asp */
+
+body {
+    background-color: lightpink;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: purple;
+    text-align: center;
+    background-image: url(imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}

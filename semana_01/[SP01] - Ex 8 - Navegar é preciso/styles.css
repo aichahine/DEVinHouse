@@ -1,0 +1,64 @@
+/* [SP01] - Ex 8 - Navegar é preciso
+Crie um menu no topo da página index que fique sempre fixo enquanto você rola a página para
+baixo, contendo um logo do lado esquerdo e uma lista das páginas do site à direita: “Home” para
+o index.html e “Imagens” para a página com as imagens.
+Dica: https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+
+/* Reset: */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    padding-top: 42px;
+    background-color: lightpink;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: purple;
+    text-align: center;
+    background-image: url(imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+p {
+    font-size: 14px;
+}
+
+a img {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#container-imagens {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#container-imagens img {
+    width: calc(100% / 3);
+}
+
+nav {
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* definindo distancia zero a esquerda e distancia zero a direita, o elemento sera 'esticado' por todo o tamanho do seu conteiner*/
+    background-color: violet;
+}
+
+#logo {
+    height: 40px;
+}

@@ -1,0 +1,30 @@
+/* [SP01] - Ex 4 - Links e bordas
+Adicione um botão (anchor) contendo o texto “Avançar” e, utilizando apenas HTML, faça com que
+o usuário, ao clicar nesse botão, vá para a página das imagens.
+Substitua o texto “Avançar” do botão do por uma imagem.
+Faça com que o botão tenha uma borda curvada.
+Aumente o padding do botão em 10 pixels, coloque uma borda sólida de 2 pixels na cor preta, e
+uma margem superior de 20 pixels.
+Dica: https://www.w3schools.com/css/css_boxmodel.asp */
+
+body {
+    background-color: lightpink;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: purple;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}

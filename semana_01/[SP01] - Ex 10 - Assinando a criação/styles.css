@@ -1,0 +1,78 @@
+/* [SP01] - Ex 10 - Assinando a criação
+Adicione uma região de rodapé na página index, com uma cor de fundo diferente do resto da
+página e algumas informações sobre você, o/a desenvolvedor(a).
+Faça com que o rodapé fique sempre ao final da página, junto da borda inferior da janela, mas
+sem ser fixo. Se o conteúdo ocupar mais do que a altura total da página, o rodapé não pode se
+sobrepor a ele. */
+
+/* Reset: */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding-top: 42px;
+    padding-bottom: 30px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: lightpink;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: purple;
+    text-align: center;
+    background-image: url(imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+p {
+    font-size: 14px;
+}
+
+a img {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#container-imagens {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#container-imagens img {
+    width: calc(100% / 3);
+}
+
+nav {
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* definindo distancia zero a esquerda e distancia zero a direita, o elemento sera 'esticado' por todo o tamanho do seu conteiner*/
+    background-color: violet;
+}
+
+#logo {
+    height: 40px;
+}
+
+footer {
+    height: 30px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: lightblue;
+}

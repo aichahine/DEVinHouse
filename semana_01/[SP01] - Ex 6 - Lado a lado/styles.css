@@ -1,0 +1,46 @@
+/* [SP01] - Ex 6 - Lado a lado
+No documento das imagens, faça com que elas apareçam uma ao lado da outra,
+horizontalmente.
+Dica: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+
+/* Reset: */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: lightpink;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: purple;
+    text-align: center;
+    background-image: url(imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+p {
+    font-size: 14px;
+}
+
+a img {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#container-imagens {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#container-imagens img {
+    width: calc(100% / 3);
+}
