@@ -1,12 +1,57 @@
+<!-- [M1S03] - Ex 2 - Construa uma calculadora simples
+Faça uma página HTML contendo 2 campos de texto (dica: input type number), para que o usuário possa inserir, em cada um, o valor que deseja calcular. Coloque também na sua página 4 botões, um indicando soma, outro subtração, outro multiplicação, e outro divisão. Adicione um outro campo de texto, apenas leitura (readonly). Quando o usuário clicar no botão de soma (multiplicação, divisão ou subtração), a sua página deve somar (multiplicar, dividir ou subtrair) os 2 valores inseridos pelo usuário e exibir o resultado no campo de texto readonly.
+Programe essa interatividade utilizando JavaScript. -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[M1S03] - Ex 2 - Construa uma calculadora simples</title>
+    <title>DEVinHouse Softplan</title>
+
+    <link rel="stylesheet" href="/styles/style.css" />
+
 </head>
+
 <body>
-    
+    <main>
+
+        <h1>[M1S03] - Ex 2 - Construa uma calculadora simples</h1>
+
+        <p>Faça uma página HTML contendo 2 campos de texto (dica: input type number), para que o usuário possa inserir,
+            em cada um, o valor que deseja calcular. Coloque também na sua página 4 botões, um indicando soma, outro
+            subtração, outro multiplicação, e outro divisão. Adicione um outro campo de texto, apenas leitura
+            (readonly). Quando o usuário clicar no botão de soma (multiplicação, divisão ou subtração), a sua página
+            deve somar (multiplicar, dividir ou subtrair) os 2 valores inseridos pelo usuário e exibir o resultado no
+            campo de texto readonly.
+            Programe essa interatividade utilizando JavaScript.</p>
+
+        <label for="primeiroNumero">Insira o primeiro número: </label>
+        <input type="number" name="primeiroNumero" id="firstNumber" />
+        <br>
+        <label for="segundoNumero">Insira o segundo número: </label>
+        <input type="number" name="segundoNumero" id="secondNumber" />
+        <br>
+        <br>
+
+        <div id="operacoes">
+            <input type="button" value=" + " id="soma"/>
+            <input type="button" value=" - " id="subtracao"/>
+            <input type="button" value=" x " id="multiplicacao"/>
+            <input type="button" value=" ÷ " id="divisao"/>
+        </div>
+
+        <br>
+        <br>
+        <label for="resultado">Resultado: </label>
+        <input onclick='alert("Apenas leitura!")' type="number" name="resultado" id="result" readonly/>
+
+    </main>
+
+    <script src="scripts/script.js" defer></script>
+
 </body>
+
 </html>
