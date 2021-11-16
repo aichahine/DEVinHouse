@@ -1,3 +1,5 @@
+<!-- HTML: principais tags como head, meta, title, body, div, h1, form, input, button, ul, li. Atributos de tags como class, id, type. Inclusão de arquivos de estilos (css) e de script (js) na página. -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>To-Do List</title>
+    <title> To Do List </title>
 
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -15,20 +17,35 @@
 
 <body>
     <header>
-        <h1>To-Do List</h1>
+        <h1> To Do List &#x1F4DD </h1>
     </header>
-
     <main>
+        <section>
+            <label 
+                for="newTask">
+                Nova tarefa: 
+            </label>
 
-        <label for="novaAtividade">Nova atividade: </label>
-
-        <input type="text" id="novaAtividade" placeholder="Digite uma nova atividade" onfocus="this.value=''"/>
-
-        <button id="inserir"> Inserir! </button>
-
-        <div id="lista"></div>
-
+            <input
+                id="newTask"
+                maxlength="230"
+                name="newTask"
+                type="text"
+                placeholder="Digite uma nova tarefa"
+                required
+            />
+            
+            <button
+                id="button">
+                Adicionar
+            </button>
+        </section>
+        <br>
+        <h2> Lista de tarefas </h2>
+        <ul
+            id="tasksUl"
+            class="listClass">
+        </ul>   
     </main>
 </body>
-
 </html>
